@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Little Lemon</title>
+</head>
+
+<body>
+    <h1>Our menu</h1>
+    <p>Chickpea, herbs, spices.</p>
+    <h2>Pasta Salad</h2>
+    <img src="logo.png" width="100" alt="img" onmouseenter="myFunction(this)" onmouseleave="myFunction1(this)" />
+    <p>Lettuce, vegetables, mozzarella.</p>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>In stock</th>
+        </tr>
+        <tr>
+            <td>Sugar</td>
+            <td>1.2</td>
+            <td>yes</td>
+        </tr>
+        <tr>
+            <td>Milk</td>
+            <td>3.6</td>
+        </tr>
+    </table>
+
+    <br>
+    <form action="/registration" method="post">
+        <label>User Name</label>
+        <input type="text" name="userName" /><br>
+
+        <label>Password</label>
+        <input type="password" name="password" /><br>
+
+        <label>Is Soldier</label>
+        <input type="checkbox" name="isSoldier" value="IsSoldier" /><br>
+
+        <label>Amount</label>
+        <input type="number" value="0" name="amount" />
+        <input type="submit" />
+    </form>
+
+    <br>
+    <a href="workingHours.html">Working Hours</a>
+</body>
+
+</html>
+
+<!--Styles for table-->
+<style>
+    table {
+        border: 5px solid black;
+    }
+
+    th {
+        border: 4px solid red;
+    }
+
+    td {
+        border: 1px solid forestgreen;
+    }
+</style>
+
+<!--JS functions-->
+<script>
+    function myFunction(x) {
+        x.style.background = "yellow";
+    }
+    function myFunction1(x) {
+        x.style.background = "white";
+    }
+</script>
