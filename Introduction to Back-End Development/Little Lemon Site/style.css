@@ -9,3 +9,11 @@ td {
 #header1 {
     color: blue;
 }
+
+p.style1 {
+    color: orange;
+}
+
+p:hover {
+    color: blueviolet;
+}
