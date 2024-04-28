@@ -1,0 +1,38 @@
+/* 1. Set background color of body */
+body {
+  background-color: #e0e0e2;
+}
+
+/* 2. Set text color of h1 */
+h1 {
+  color: #721817;
+}
+
+/* 3. Set text color of h2 */
+h2 {
+  color: #721817;
+}
+
+/* 4. Align text center */
+.center-text {
+  text-align: center;
+}
+
+/* 5. Center the logo */
+#logo {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* 6. Style span elements within h2 */
+h2 > span {
+  color: #fa9f42;
+  font-size: 0.75em;
+}
+
+/* 7. Style copyright */
+#copyright {
+  font-size: 0.75em;
+  padding-top: 12px;
+}
