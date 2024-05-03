@@ -1,6 +1,11 @@
+# init set
 s1 = {1, 2, 3, 4, 5}
 print(*s1)
 
+# can not access by index
+# print(s1[0])
+
+# add value to set
 s1.add(6)
 print(*s1)
 
