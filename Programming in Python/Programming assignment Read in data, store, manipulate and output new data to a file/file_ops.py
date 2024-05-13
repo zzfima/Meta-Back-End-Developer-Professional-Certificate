@@ -58,8 +58,8 @@ def write_first_line_to_file(file_contents, output_filename):
         output_filename: the name of the file to be written to
     """
     ### WRITE SOLUTION HERE
-    with open(output_filename, mode='w') as outputFile:
-        
+    with open(output_filename, mode="w") as outputFile:
+        outputFile.write(file_contents[0])
 
 
 def read_even_numbered_lines(file_name):
@@ -77,8 +77,14 @@ def read_even_numbered_lines(file_name):
         list: a list of the even-numbered lines of the file
     """
     ### WRITE SOLUTION HERE
-
-    raise NotImplementedError()
+    with open(file_name, mode="r") as file:
+        evenNumberedLines = []
+        cnt = 0
+        for line in file.readlines():
+            if cnt % 2 == 0:
+                evenNumberedLines.append(line)
+            cnt += 1
+        return evenNumberedLines
 
 
 def read_file_in_reverse(file_name):
@@ -97,8 +103,13 @@ def read_file_in_reverse(file_name):
         list: list of the lines of the file in reverse order.
     """
     ### WRITE SOLUTION HERE
-
-    raise NotImplementedError()
+    with open(file_name, mode="r") as file:
+        fileContent = []
+        for l in file.readlines():
+            fileContent.append(l)
+        fileContent.reverse()
+        print(fileContent)
+        return fileContent
 
 
 """
@@ -110,9 +121,9 @@ Feel free to uncomment/modify/add to them as you wish.
 def main():
     file_contents = read_file("sampletext.txt")
     print(read_file_into_list("sampletext.txt"))
-    # write_first_line_to_file(file_contents, "online.txt")
-    # print(read_even_numbered_lines("sampletext.txt"))
-    # print(read_file_in_reverse("sampletext.txt"))
+    write_first_line_to_file(file_contents, "online.txt")
+    print(read_even_numbered_lines("sampletext.txt"))
+    print(read_file_in_reverse("sampletext.txt"))
 
 
 if __name__ == "__main__":
