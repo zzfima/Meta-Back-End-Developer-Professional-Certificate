@@ -15,9 +15,11 @@ def read_file(file_name):
     """
     ### WRITE SOLUTION HERE
     with open(file_name, mode="r") as file:
-        content = file.readlines()
-        print(content)
-        return content
+        fileContent = []
+        for textLine in file.readlines():
+            fileContent.append(textLine)
+            print(textLine)
+        return fileContent
 
 
 def read_file_into_list(file_name):
