@@ -7,3 +7,7 @@ def checkSign(i: int) -> str:
 
 addedList = map(checkSign, [1, 2, -3, 4, -5])
 print(*addedList)
+
+
+addedList = map(lambda i: i * 10, [1, 2, -3, 4, -5])
+print(*addedList)
