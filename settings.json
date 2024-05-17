@@ -1,0 +1,36 @@
+{
+    "workbench.colorTheme": "Default Dark+",
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+    "liveServer.settings.port": 5678,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "git.enableSmartCommit": true,
+    "explorer.confirmDelete": false,
+    "npm.keybindingsChangedWarningShown": true,
+    "go.lintTool": "golint",
+    "cSpell.userWords": [
+        "Deconstuct",
+        "mattn",
+        "rfct",
+        "stretchr",
+        "unbuffered"
+    ],
+    "go.toolsManagement.autoUpdate": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "extensions.autoUpdate": "onlySelectedExtensions",
+    "workbench.iconTheme": "vscode-icons",
+    "debug.javascript.autoAttachFilter": "smart",
+    "window.zoomLevel": 1,
+    "extensions.ignoreRecommendations": true,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "explorer.confirmDragAndDrop": false,
+    "python.analysis.typeCheckingMode": "strict",
+    "cSpell.diagnosticLevel": "Hint",
+}
