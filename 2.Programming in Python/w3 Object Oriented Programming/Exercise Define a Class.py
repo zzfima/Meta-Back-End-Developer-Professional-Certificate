@@ -26,3 +26,4 @@ print("House.num_rooms = 8")
 House.num_rooms = 8
 print("house.num_rooms", house.num_rooms)
 print("House.num_rooms", House.num_rooms)
+
