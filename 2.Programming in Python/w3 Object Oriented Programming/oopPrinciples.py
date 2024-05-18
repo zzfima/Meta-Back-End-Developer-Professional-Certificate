@@ -17,11 +17,11 @@ class Diesel(Engine):
     def printState(self):
         print(self.k)
         print(self._a)
-        # cannot access private: print(self.__b)
+        # print(self.__b)
 
 
 d = Diesel()
 d.printState()
 print(d.k)
-print(d._a)
-# cannot access private: print(d.__b)
+# print(d._a)
+# print(d.__b)
