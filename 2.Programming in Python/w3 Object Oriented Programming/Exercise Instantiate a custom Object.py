@@ -4,6 +4,7 @@ class MyFirstClass:
         self.index = "Author-Book"
 
     def hand_list(self, philosopher: str, book: str):
+        print(self.index)
         print("{} wrote this book: {}".format(philosopher, book))
 
 
