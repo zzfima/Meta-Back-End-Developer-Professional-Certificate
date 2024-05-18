@@ -1,7 +1,7 @@
 text = "hello"
 
-for c in text:
-    print(c)
+for c, i in enumerate(text):
+    print("element at ", c, " is character ", i)
 
 cnt = 0
 
