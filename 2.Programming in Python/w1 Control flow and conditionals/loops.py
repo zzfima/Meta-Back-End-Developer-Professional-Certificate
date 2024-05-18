@@ -14,6 +14,9 @@ while cnt < 5:
         break
     cnt += 1
 
+#pass meaning - nothing happens, but you avoid getting an error. Used as a placeholder for future code.
 print("**3**")
 for i in range(5):
     print(i)
+    if i % 2 == 0:
+        pass
