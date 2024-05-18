@@ -3,12 +3,14 @@ from abc import ABC
 
 class Engine(ABC):
     def __init__(self):
+        print("Engine ctor")
         self._a = 2  # protected
         self.__b = 3  # private
 
 
 class Diesel(Engine):
     def __init__(self):
+        print("Diesel ctor")
         super().__init__()
         self.k = 4
 
