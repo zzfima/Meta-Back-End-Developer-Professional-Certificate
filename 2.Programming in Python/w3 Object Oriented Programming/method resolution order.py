@@ -1,5 +1,7 @@
+print(
+    "method resolution order - determines the order in which a given method is searched"
+)
 """
-method resolution order - determines the order in which a given method is searched
 
      ^
      |
@@ -22,6 +24,9 @@ class B(A):
         super().f1()
 
 
+print("simple inheritance MRO: {}".format(B.mro()))
+
+
 # multiple inheritance
 class C:
     def f1(self):
@@ -39,6 +44,9 @@ class E(C, D):
         super().f2()
 
 
+print("multiple inheritance MRO: {}".format(E.mro()))
+
+
 # multilevel inheritance
 class F:
     def f1(self):
@@ -54,3 +62,32 @@ class H(G):
     def f3(self):
         super().f2()
         super().f1()
+
+
+print("multilevel inheritance MRO: {}".format(H.mro()))
+
+
+# diamond inheritance
+class I:
+    def f1(self):
+        pass
+
+
+class J(I):
+    def f2(self):
+        super().f1()
+
+
+class K(I):
+    def f3(self):
+        super().f1()
+
+
+class L(J, K):
+    def f4(self):
+        super().f3()
+        super().f2()
+        super().f1()
+
+
+print("diamond inheritance MRO: {}".format(L.mro()))
