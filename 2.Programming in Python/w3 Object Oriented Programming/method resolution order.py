@@ -91,3 +91,4 @@ class L(J, K):
 
 
 print("diamond inheritance MRO: {}".format(L.mro()))
+help(L)
