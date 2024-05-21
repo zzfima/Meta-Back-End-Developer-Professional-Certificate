@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+from typing import override
 
 
 class EmployeeBase(ABC):
@@ -8,10 +9,12 @@ class EmployeeBase(ABC):
 
 
 class Boss(EmployeeBase):
+    @override
     def printName(self):
         print("I am a boss")
 
 class Cleaner(EmployeeBase):
+    @override
     def printName(self):
         print("I am a cleaner")
         
