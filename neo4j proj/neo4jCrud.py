@@ -1,7 +1,7 @@
 from neo4j import GraphDatabase
 
 
-class Neo4jApp:
+class neo4jCrud:
     def __init__(self, uri: str, user: str, password: str):
         self.driver = GraphDatabase.driver(uri, auth=(user, password))
 
@@ -58,23 +58,3 @@ class Neo4jApp:
                 "MATCH (f:Feature {id: $featureId}) DETACH DELETE f",
                 featureId=feature_id,
             )
-
-
-if __name__ == "__main__":
-    app = Neo4jApp("bolt://localhost:7687", "neo4j", "maximus11")
-
-    feature_id = 123
-    feature_name = "My Feature"
-    branch_name = "My Branch"
-
-    # create
-    app.add_feature(feature_id, feature_name)
-    app.add_branch(branch_name)
-    app.create_feature_branch_relationship(feature_id, feature_name, branch_name)
-
-    # destroy
-    app.remove_feature_branch_relationship(feature_id, branch_name)
-    app.remove_feature(feature_id)
-    app.remove_branch(branch_name)
-
-    app.close()
