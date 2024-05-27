@@ -13,8 +13,8 @@ Global REgular exPression
 * Bash Redirections
   * https://www.gnu.org/software/bash/manual/html_node/Redirections.html#Redirections
 
-* Bash Cheatsheet
+* Bash Cheat sheet
   * https://devhints.io/bash
 
-* Grep Cheatsheet
+* Grep Cheat sheet
   * https://devhints.io/grep
