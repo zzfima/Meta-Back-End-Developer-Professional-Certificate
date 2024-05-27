@@ -14,7 +14,7 @@ class Service:
         self.api_client = api_client
 
 
-def main() -> None:
+def main(service: Service) -> None:
     service = Service(
         ApiClient(os.getenv("GIT_LFS_PATH"), int(os.getenv("NUMBER_OF_PROCESSORS")))
     )
@@ -24,4 +24,8 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    service = Service(
+        ApiClient(os.getenv("GIT_LFS_PATH"), int(os.getenv("NUMBER_OF_PROCESSORS")))
+    )
+
+    main(service)
