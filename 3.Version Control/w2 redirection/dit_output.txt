@@ -1,0 +1,5 @@
+total 2
+-rw-r--r-- 1 efzabar 1049089   0 May 27 09:40 cat
+-rw-r--r-- 1 efzabar 1049089   0 May 27 09:49 dit_output.txt
+-rw-r--r-- 1 efzabar 1049089  29 May 27 09:38 keyboard_input.txt
+-rw-r--r-- 1 efzabar 1049089 416 May 27 09:47 README.MD
