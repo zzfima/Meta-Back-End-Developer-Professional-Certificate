@@ -34,6 +34,26 @@ sqlite3:
 
     DROP TABLE contacts;
 
+ALTER TABLE - rename
+
+sqlite3:
+
+    ALTER TABLE contacts
+    RENAME TO myConatact;
+
+ALTER TABLE - add column
+
+sqlite3:
+
+    ALTER TABLE contacts
+    ADD COLUMN age INTEGER;
+
+TRUNCATE TABLE - remove all records
+
+sqlite3:
+
+    TRUNCATE TABLE contacts;
+
 ## DML
 
 INSERT
