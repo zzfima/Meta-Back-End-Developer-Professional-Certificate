@@ -9,7 +9,7 @@
 
 ## DDL
 
-CREATE DATABASE store.db;
+CREATE DATABASE
 
 sqlite3:
 
@@ -17,7 +17,7 @@ sqlite3:
     .database
     .q
 
-CREATE TABLE contacts;
+CREATE TABLE
 
 sqlite3:
 
@@ -31,7 +31,7 @@ sqlite3:
 
 ## DML
 
-INSERT INTO...
+INSERT
 
 sqlite3:
 
@@ -41,10 +41,17 @@ sqlite3:
         ('Nick', 'Xu', 'xu@cmp.com', '972 549378566'),
         ('Valery', 'Jessenin', 'jes@cmp.com', '972 508475748');
 
-UPDATE contacts
+UPDATE
 
 sqlite3:
 
     UPDATE contacts
     SET first_name = 'Sergey'
+    WHERE contact_id = 2;
+
+DELETE
+
+sqlite3:
+
+    DELETE FROM contacts
     WHERE contact_id = 2;
